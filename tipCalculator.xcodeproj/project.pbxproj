@@ -14,6 +14,7 @@
 		35732B711CF810F70035E33D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35732B6F1CF810F70035E33D /* LaunchScreen.storyboard */; };
 		35732B7C1CF810F70035E33D /* tipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35732B7B1CF810F70035E33D /* tipCalculatorTests.swift */; };
 		35732B871CF810F70035E33D /* tipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35732B861CF810F70035E33D /* tipCalculatorUITests.swift */; };
+		35732B951CF8111C0035E33D /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35732B941CF8111C0035E33D /* CalculatorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		35732B821CF810F70035E33D /* tipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35732B861CF810F70035E33D /* tipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipCalculatorUITests.swift; sourceTree = "<group>"; };
 		35732B881CF810F70035E33D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35732B941CF8111C0035E33D /* CalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				35732B6D1CF810F70035E33D /* Assets.xcassets */,
 				35732B6F1CF810F70035E33D /* LaunchScreen.storyboard */,
 				35732B721CF810F70035E33D /* Info.plist */,
+				35732B941CF8111C0035E33D /* CalculatorModel.swift */,
 			);
 			path = tipCalculator;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					35732B621CF810F70035E33D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = C579B8B4M9;
 					};
 					35732B761CF810F70035E33D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -256,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35732B951CF8111C0035E33D /* CalculatorModel.swift in Sources */,
 				35732B691CF810F70035E33D /* ViewController.swift in Sources */,
 				35732B671CF810F70035E33D /* AppDelegate.swift in Sources */,
 			);
@@ -399,10 +404,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = tipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.hunj.tipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +419,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = tipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.hunj.tipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +495,7 @@
 				35732B8D1CF810F70035E33D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35732B8E1CF810F70035E33D /* Build configuration list for PBXNativeTarget "tipCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +504,7 @@
 				35732B901CF810F70035E33D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35732B911CF810F70035E33D /* Build configuration list for PBXNativeTarget "tipCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +513,7 @@
 				35732B931CF810F70035E33D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
